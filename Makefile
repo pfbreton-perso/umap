@@ -1,7 +1,13 @@
 test:
 	py.test -xv umap/tests/
+
+test-integration:
+	DJANGO_ALLOW_ASYNC_UNSAFE=1 py.test -xv umap/tests/integration/
+
 develop:
 	pip install -e .[test,dev]
+	playwright install
+
 release: test compilemessages
 	python setup.py sdist bdist_wheel
 test_publish:
