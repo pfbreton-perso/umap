@@ -33,6 +33,7 @@
   },
   "homepage": "http://wiki.openstreetmap.org/wiki/UMap",
   "dependencies": {
+    "chroma-js": "^2.4.2",
     "csv2geojson": "5.1.1",
     "dompurify": "^3.0.3",
     "georsstogeojson": "^0.1.0",
